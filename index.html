@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokedex</title>
+</head>
+<body>
+ 
+  <section id="registro">
+    <h1>Registro</h1>
+    <input type="text" id="nombre" placeholder="Tu nombre">
+    <label for="email">Email</label>
+    <input id="email" type="email" placeholder="Escribe tu correo">
+
+    <label for="startDate">Fecha de inicio de aventura</label>
+    <input id="startDate" type="date">
+
+    <button id="btn-registrar">Registrar</button>
+  </section>
+
+  
+  <section id="principal" style="display:none;">
+    <h2 id="saludo"></h2>
+    <input type="text" id="poke_search" placeholder="Nombre del Pokémon">
+    <button onclick="getPokeData()">Buscar</button>
+    <div id="poke_data"></div>
+    <p id="poke_name"></p>
+  </section>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
